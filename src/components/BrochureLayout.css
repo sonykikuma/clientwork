@@ -1,0 +1,204 @@
+.brochure-main-card {
+  background: #fff;
+  /* border: 3px solid #2eb82e; */
+  border-radius: 8px;
+  /* max-width: 1100px; */
+  margin: 40px auto;
+  padding: 28px 32px 18px 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.brochure-header {
+  display: none;
+}
+
+.brochure-logo-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+.brochure-logo {
+  width: 70px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+.brochure-title-main {
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.brochure-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border: 2px solid #2eb82e;
+}
+.brochure-left,
+.brochure-middle,
+.brochure-right {
+  /* Remove min-width, max-width, flex, and padding for Bootstrap control */
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+/* .brochure-left {
+  border-top-right-radius: 0 !important;
+}
+.brochure-office-img {
+  border-top-right-radius: 0 !important;
+} */
+.brochure-office-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-bottom: 2px solid #bdbdbd;
+  margin-bottom: 16px;
+  border-radius: 8px 8px 0 0;
+}
+.brochure-about-title {
+  color: #0074c7;
+  font-weight: 700;
+  margin: 12px 0 6px 18px;
+  font-size: 1.08rem;
+}
+.brochure-about-text {
+  font-size: 0.98rem;
+  text-align: justify;
+  margin: 0 18px 18px 18px;
+}
+
+.brochure-middle-text {
+  font-size: 0.98rem;
+  text-align: justify;
+  color: #222;
+  padding: 18px 18px 18px 18px;
+}
+
+.brochure-box {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px 18px 12px 18px;
+  margin-bottom: 0;
+  border: none;
+}
+.brochure-activities {
+  border-color: #2eb82e;
+  background: #fff;
+}
+.brochure-section-title {
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 1.04rem;
+}
+.brochure-section-title.blue {
+  color: #0074c7;
+}
+.brochure-instructors {
+  border-color: #a94442;
+  background: #fef4ec;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.brochure-contact {
+  border-color: #b39ddb;
+  background: #e3e0f7;
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+.bold { font-weight: 700; }
+.red { color: #d32f2f; }
+
+.brochure-footer {
+  text-align: center;
+  color: #d32f2f;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+
+.truncate-triangle {
+  /* Creates a triangular cut at the top right */
+  clip-path: polygon(
+    0 0, 
+    85% 0, 
+    100% 30px, 
+    100% 100%, 
+    0 100%
+  );
+  position: relative;
+  z-index: 1;
+}
+
+.truncate-triangle::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 48px; height: 48px;
+  background: #fff;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  border-top: 2px solid #2eb82e; /* match your card border */
+  border-right: 2px solid #2eb82e;
+  z-index: 2;
+}
+.truncate-triangle {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.triangle-corner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The triangle itself */
+.triangle-corner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 48px solid #fff;         /* triangle color (matches card bg) */
+  border-left: 48px solid transparent; /* makes the triangle shape */
+  z-index: 2;
+}
+
+/* The triangle border */
+.triangle-corner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #2eb82e;         /* border color, slightly bigger */
+  border-left: 50px solid transparent;
+  z-index: 1;
+}
+
+@media (max-width: 1100px) {
+  .brochure-main-card {
+    padding: 18px 4vw 12px 4vw;
+  }
+}
+@media (max-width: 900px) {
+  .brochure-footer {
+    margin-top: 24px;
+  }
+}
