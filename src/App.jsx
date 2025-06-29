@@ -10,6 +10,7 @@ import BrochureLayout from "./components/BrochureLayout";
 function App() {
   return (
     <>
+      <Header />
       <div className="">
         {/* <Header />
         <About />
