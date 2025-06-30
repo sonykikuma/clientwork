@@ -20,9 +20,9 @@ const recommended = [
 ];
 
 const allCourses = [
-  { label: "Academic Activities", url: "#" },
-  { label: "Industry Activities", url: "#" },
-  { label: "Student Activities", url: "#" },
+  { label: "Academic Activities", url: "/academic" },
+  { label: "Industry Activities", url: "/industrial" },
+  { label: "Student Activities", url: "/students" },
 
   // { label: "Master Program", url: "#" },
   // { label: "Cloud Computing", url: "#" },
