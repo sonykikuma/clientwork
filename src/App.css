@@ -22,3 +22,19 @@
   width: auto; /* maintain aspect ratio automatically */
   object-fit: contain;
 }
+
+.scroll-marquee {
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

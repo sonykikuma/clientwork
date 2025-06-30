@@ -7,21 +7,23 @@ import AnnouncementBar from "./components/AnnouncementBar";
 import MainNavbar from "./components/MainNavbar";
 import HeroSection from "./components/HeroSection";
 import TrainingSection from "./components/TrainingSection";
+import ImageCarousel from "./components/ImageCarousel";
 
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <AnnouncementBar />
       <ContactBar />
       <MainNavbar />
-      <HeroSection />
-      <TrainingSection />
+      {/* <HeroSection /> */}
+      <ImageCarousel />
       <div className="">
         <BrochureLayout />
       </div>
+      <Footer />
     </>
   );
 }

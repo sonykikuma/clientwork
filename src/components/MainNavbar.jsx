@@ -20,15 +20,19 @@ const recommended = [
 ];
 
 const allCourses = [
-  { label: "Master Program", url: "#" },
-  { label: "Cloud Computing", url: "#" },
-  { label: "Data Analytics", url: "#" },
-  { label: "Programming", url: "#" },
-  { label: "Software Testing", url: "#" },
-  { label: "DevOps", url: "#" },
-  { label: "Web Designing", url: "#" },
-  { label: "Project Management", url: "#" },
-  { label: "Other Training", url: "#" },
+  { label: "Academic Activities", url: "#" },
+  { label: "Industry Activities", url: "#" },
+  { label: "Student Activities", url: "#" },
+
+  // { label: "Master Program", url: "#" },
+  // { label: "Cloud Computing", url: "#" },
+  // { label: "Data Analytics", url: "#" },
+  // { label: "Programming", url: "#" },
+  // { label: "Software Testing", url: "#" },
+  // { label: "DevOps", url: "#" },
+  // { label: "Web Designing", url: "#" },
+  // { label: "Project Management", url: "#" },
+  // { label: "Other Training", url: "#" },
 ];
 // --------------------
 
@@ -48,13 +52,15 @@ const MainNavbar = () => (
         {/* ---------------------------------  RIGHT SIDE  -------------------------------- */}
         <Nav className="ms-auto gap-lg-3 align-items-lg-center">
           {/* >>>> Recommended Courses (solid‑blue pill) */}
-          <Dropdown as={Nav.Item}>
+          <Nav.Link href="/">Home</Nav.Link>
+
+          {/* <Dropdown as={Nav.Item}>
             <Dropdown.Toggle
               as={Nav.Link}
               className="bg-primary text-white px-3 py-2 rounded"
               style={{ border: "none" }}
             >
-              Recommended Courses
+              Home {/* Recommended Courses 
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
@@ -64,18 +70,18 @@ const MainNavbar = () => (
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown> */}
 
           {/* >>>> All Courses (multi‑level) */}
-          <MultiLevelDropdown title="All Courses " items={allCourses} />
+          <MultiLevelDropdown title="Our Services " items={allCourses} />
 
           {/* >>>> Standard links */}
           {[
-            { href: "/branches", label: "Branches" },
-            { href: "/online-training", label: "Online Training" },
-            { href: "/corporate-training", label: "Corporate Training" },
-            { href: "/hire-talent", label: "Hire Talent" },
-            { href: "/job-seekers", label: "Job Seekers" },
+            { href: "/about", label: "About Us" },
+            { href: "/", label: "Testimonials" },
+            { href: "/", label: "Contact Us" },
+            // { href: "/hire-talent", label: "Hire Talent" },
+            // { href: "/job-seekers", label: "Job Seekers" },
           ].map((l) => (
             <Nav.Link href={l.href} key={l.label}>
               {l.label}
