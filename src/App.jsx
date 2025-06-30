@@ -6,6 +6,8 @@ import ContactBar from "./components/ContactBar";
 import AnnouncementBar from "./components/AnnouncementBar";
 import MainNavbar from "./components/MainNavbar";
 import HeroSection from "./components/HeroSection";
+import TrainingSection from "./components/TrainingSection";
+
 import "./App.css";
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       <ContactBar />
       <MainNavbar />
       <HeroSection />
-
+      <TrainingSection />
       <div className="">
         <BrochureLayout />
       </div>

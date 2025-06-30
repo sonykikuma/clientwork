@@ -16,3 +16,9 @@
 .input-group > .form-control {
   border-radius: 0;
 }
+/* Adjust numbers to whatever fits your design */
+.brand-logo {
+  height: 60px; /* fixed height                       */
+  width: auto; /* maintain aspect ratio automatically */
+  object-fit: contain;
+}

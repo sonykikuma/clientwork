@@ -7,7 +7,7 @@ import {
   Dropdown, // ⬅ using Dropdown directly so we can style the toggle as a button
 } from "react-bootstrap";
 import MultiLevelDropdown from "./MultiLevelDropdown";
-import logo from "../assets/dev-logo.svg";
+import logo from "../assets/logo.jpeg";
 
 // --- sample data ---
 const recommended = [
@@ -36,7 +36,11 @@ const MainNavbar = () => (
   <Navbar expand="lg" bg="white" className="shadow-sm">
     <Container>
       <Navbar.Brand href="/">
-        <img src={logo} alt="Logo" height="42" />
+        <img
+          src={logo}
+          alt="Logo"
+          className="brand-logo d-inline-block align-top"
+        />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="mainNav" />
