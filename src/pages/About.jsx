@@ -25,11 +25,11 @@ const About = () => {
                   instructors from IITs, NITs, and reputed national and
                   international universities.
                 </p>
-                <p>
+                {/* <p>
                   With 100% job-oriented programs, project mentoring, and
                   international exposure, we support learners from 10th grade to
                   post-graduate level, both in India and abroad.
-                </p>
+                </p> */}
                 <p>
                   This programs covers student activities such as academic
                   support for 10th (State/CBSE/ICSE), PUC, Diploma, Engineering,
