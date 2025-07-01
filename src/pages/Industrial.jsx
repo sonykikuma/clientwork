@@ -4,6 +4,7 @@ import ContactBar from "../components/ContactBar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import industrial from "/industrial.jpg";
+import students from "/students.jpg";
 
 const Industrial = () => {
   return (
@@ -41,9 +42,9 @@ const Industrial = () => {
 
             {/* === RIGHT IMAGE === */}
             <div className="col-md-4">
-              <div className="bg-white shadow-sm rounded-4 overflow-hidden d-flex align-items-center">
+              <div className="bg-white shadow-sm rounded-4 overflow-hidden h-100 d-flex align-items-center">
                 <img
-                  src={industrial}
+                  src={students}
                   alt="industrial"
                   className="img-fluid w-100 h-100"
                   style={{ objectFit: "cover" }}

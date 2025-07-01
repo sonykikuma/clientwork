@@ -4,6 +4,7 @@ import ContactBar from "../components/ContactBar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import students from "/students.jpg";
+import industrial from "/industrial.jpg";
 
 const Students = () => {
   return (
@@ -67,7 +68,7 @@ const Students = () => {
             <div className="col-md-4">
               <div className="bg-white shadow-sm rounded-4 overflow-hidden h-100 d-flex align-items-center">
                 <img
-                  src={students}
+                  src={industrial}
                   alt="students"
                   className="img-fluid w-100"
                   style={{ objectFit: "cover", height: "100%" }}
