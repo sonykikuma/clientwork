@@ -15,14 +15,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
       <ContactBar />
       <MainNavbar />
       {/* <HeroSection /> */}
       <ImageCarousel />
-      <div className="">
+      {/* <div className="">
         <BrochureLayout />
-      </div>
+      </div> */}
       <Footer />
     </>
   );
