@@ -80,42 +80,6 @@ const TrainingSection = () => {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-
-            {/* <Accordion activeKey={key} onSelect={(k) => setKey(k)}>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                  Introduction about Besant Technologies
-                </Accordion.Header>
-                <Accordion.Body>
-                  Besant Technologies has quickly established itself as a
-                  leader …
-                  <br />
-                  Our dedicated coordinators expertly manage subjects, lectures,
-                  and problem‑solving to ensure comprehensive training and
-                  successful outcomes for our students.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>Our Features</Accordion.Header>
-                <Accordion.Body>
-                  • 100 % placement support
-                  <br />• Industry‑aligned curriculum
-                  <br />• Certified trainers …
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>
-                  Besant Technologies Online Training and Certification for
-                  Trending Technologies
-                </Accordion.Header>
-                <Accordion.Body>
-                  Browse our catalogue of 200+ online courses covering DevOps,
-                  Cloud, Full‑Stack, Data Science, and more …
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion> */}
           </Col>
 
           {/* ------------------- Right Quote Card ------------------- */}

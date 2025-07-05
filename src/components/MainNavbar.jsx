@@ -1,11 +1,5 @@
-// src/components/MainNavbar.jsx
 import React from "react";
-import {
-  Navbar,
-  Container,
-  Nav,
-  Dropdown, // ⬅ using Dropdown directly so we can style the toggle as a button
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
 import MultiLevelDropdown from "./MultiLevelDropdown";
 import logo from "../assets/logo.jpeg";
 
@@ -51,7 +45,7 @@ const MainNavbar = () => (
       <Navbar.Collapse id="mainNav">
         {/* ---------------------------------  RIGHT SIDE  -------------------------------- */}
         <Nav className="ms-auto gap-lg-3 align-items-lg-center">
-          {/* >>>> Recommended Courses (solid‑blue pill) */}
+          {/*  Recommended Courses (solid‑blue pill) */}
           <Nav.Link href="/">Home</Nav.Link>
 
           {/* <Dropdown as={Nav.Item}>
@@ -72,10 +66,9 @@ const MainNavbar = () => (
             </Dropdown.Menu>
           </Dropdown> */}
 
-          {/* >>>> All Courses (multi‑level) */}
+          {/*  All Courses (multi‑level) */}
           <MultiLevelDropdown title="Our Services " items={allCourses} />
 
-          {/* >>>> Standard links */}
           {[
             { href: "/about", label: "About Us" },
             { href: "/", label: "Testimonials" },
@@ -88,7 +81,6 @@ const MainNavbar = () => (
             </Nav.Link>
           ))}
         </Nav>
-        {/* ------------------------------------------------------------------------------- */}
       </Navbar.Collapse>
     </Container>
   </Navbar>

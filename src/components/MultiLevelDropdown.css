@@ -1,7 +1,6 @@
-/* position the second‑level panel */
 .dropdown-submenu {
   position: relative;
-  border-radius: 0.5rem !important; /* or use any value like 8px */
+  border-radius: 0.5rem !important;
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -18,10 +17,9 @@
 .navbar .dropdown-menu {
   border-radius: 0.75rem !important;
   overflow: hidden; /* ensure content respects rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: makes it prettier */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: rounded submenu explicitly */
 .navbar .dropdown-submenu > .dropdown-menu {
   border-radius: 0.75rem !important;
 }

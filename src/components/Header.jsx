@@ -84,9 +84,9 @@
 // src/components/Header.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/dev-logo.svg"; // swap with your real logo
+import logo from "../assets/dev-logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Header.css"; // ⬅ custom styles (next step)
+import "./Header.css";
 
 const Header = () => {
   return (
