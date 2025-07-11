@@ -5,6 +5,8 @@ import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import students from "/students.jpg";
 import industrial from "/industrial.jpg";
+import CoursesOffered from "../components/CoursesOffered";
+import CourseCardsSection from "../components/CourseCardsSection";
 
 const Students = () => {
   return (
@@ -12,6 +14,8 @@ const Students = () => {
       {/* <AnnouncementBar /> */}
       <ContactBar />
       <MainNavbar />
+      <CoursesOffered />
+      <CourseCardsSection />
       <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">

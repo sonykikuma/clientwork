@@ -29,6 +29,11 @@
   display: inline-block;
 }
 
+/* for student page */
+.link-hover-white:hover {
+  color: white !important;
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(100%);
