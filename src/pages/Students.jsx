@@ -7,6 +7,7 @@ import students from "/students.jpg";
 import industrial from "/industrial.jpg";
 import CoursesOffered from "../components/CoursesOffered";
 import CourseCardsSection from "../components/CourseCardsSection";
+import { Link } from "react-router-dom";
 
 const Students = () => {
   return (
@@ -82,7 +83,12 @@ const Students = () => {
           </div>
         </div>
       </section>
-
+      <Link
+        to="/enquiry"
+        className="mt-2 text-center d-flex justify-content-center align-items-center"
+      >
+        Check enquiries
+      </Link>
       <Footer />
     </>
   );

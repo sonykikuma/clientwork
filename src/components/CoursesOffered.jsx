@@ -69,7 +69,7 @@ const CoursesOffered = () => {
           </Col>
         </Row>
 
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <Button
             as={Link}
             to="/"
@@ -77,7 +77,7 @@ const CoursesOffered = () => {
           >
             Enquire Now
           </Button>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Button, Modal, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CourseCard from "./CourseCard";
 import { FaFlask, FaUserMd, FaLaptopCode, FaAtom } from "react-icons/fa";
@@ -50,26 +50,163 @@ const courses = [
     scholarship: "On merit",
   },
 ];
+const API_URL = "https://client-backend-ten.vercel.app/client";
 
-const CourseCardsSection = () => (
-  <Container className="py-5">
-    <Row className="g-4">
-      {courses.map((course, idx) => (
-        <Col md={6} lg={3} key={idx}>
-          <CourseCard {...course} />
-        </Col>
-      ))}
-    </Row>
-    <div className="mt-4 text-center">
-      <Button
-        as={Link}
-        to="/"
-        className="btn btn-primary text-white text-decoration-none"
-      >
-        Enquire Now
-      </Button>
-    </div>
-  </Container>
-);
+const CourseCardsSection = () => {
+  const [show, setShow] = useState(false);
+  const [formdata, setFormdata] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    classBoard: "",
+    course: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    setFormdata({ ...formdata, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formdata),
+      });
+
+      if (response.ok) {
+        alert("form submitted successfully");
+        setShow(false);
+        setFormdata({
+          name: "",
+          email: "",
+          phone: "",
+          classBoard: "",
+          course: "",
+        });
+      } else {
+        alert("Error submitting form. Please try again.");
+      }
+    } catch (error) {
+      console.log("Error:", error);
+      alert("Something went wrong");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <Container className="py-5">
+      <Row className="g-4">
+        {courses.map((course, idx) => (
+          <Col md={6} lg={3} key={idx}>
+            <CourseCard {...course} />
+          </Col>
+        ))}
+      </Row>
+      <div className="mt-4 text-center">
+        <Button
+          className="btn btn-primary text-white text-decoration-none"
+          onClick={handleShow}
+        >
+          Enquire Now
+        </Button>
+      </div>
+
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Student Details</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
+              <Form.Label>Your Name*</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                value={formdata.value}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Your Email Address*</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                value={formdata.email}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Your Phone Number*</Form.Label>
+              <Form.Control
+                type="tel"
+                placeholder="Enter your phone number"
+                name="phone"
+                value={formdata.phone}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Class & Board of Child*</Form.Label>
+              <Form.Select
+                name="classBoard"
+                value={formdata.classBoard}
+                onChange={handleChange}
+                required
+              >
+                <option>-- Select --</option>
+                <option>Class 10 - CBSE</option>
+                <option>Class 10 - State Board</option>
+                {/* Add other options as required */}
+              </Form.Select>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Course Interested In*</Form.Label>
+              <Form.Select
+                name="course"
+                value={formdata.course}
+                onChange={handleChange}
+                required
+              >
+                <option>-- Select --</option>
+                {courses.map((course, idx) => (
+                  <option key={idx}>{course.title}</option>
+                ))}
+              </Form.Select>
+            </Form.Group>
+
+            <Button
+              variant="primary"
+              type="submit"
+              className="w-100"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Submitting...." : "Submit"}
+            </Button>
+          </Form>
+        </Modal.Body>
+      </Modal>
+    </Container>
+  );
+};
 
 export default CourseCardsSection;
