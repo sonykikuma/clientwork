@@ -5,6 +5,7 @@ import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import industrial from "/industrial.jpg";
 import students from "/students.jpg";
+import IndustrialProjects from "../components/IndustrialProjects";
 
 const Industrial = () => {
   return (
@@ -54,6 +55,7 @@ const Industrial = () => {
           </div>
         </div>
       </section>
+      <IndustrialProjects />
       <Footer />
     </>
   );

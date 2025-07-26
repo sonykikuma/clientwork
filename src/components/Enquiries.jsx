@@ -105,6 +105,7 @@ const Enquiries = () => {
                     <th>Phone</th>
                     <th>Class & Board</th>
                     <th>Course Interested</th>
+                    <th>Date</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,6 +117,14 @@ const Enquiries = () => {
                       <td>{entry.phone}</td>
                       <td>{entry.classBoard}</td>
                       <td>{entry.course}</td>
+                      <td>
+                        {entry.createdAt
+                          ? new Date(entry.createdAt).toLocaleString("en-IN", {
+                              dateStyle: "medium",
+                              timeStyle: "short",
+                            })
+                          : "N/A"}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
