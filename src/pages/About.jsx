@@ -100,13 +100,13 @@ const About = () => {
         <div className="container">
           <div className="p-4 bg-white shadow-sm rounded-4">
             <h3 className="mb-4 text-primary">Founder’s thoughts</h3>
-            <p>
+            <p className="fs-4 fst-italic">
               “Education is the most powerful tool to ignite curiosity, build
               character, and foster progress. At SS-IIERC&TI, we are committed
               to creating an environment where learning thrives, aspirations
               take shape, and every student discovers their unique potential.”
             </p>
-            <p className="text-end">— Mrs. Ranjitha Chandrashekar</p>
+            <p className="text-end fw-bold">— Mrs. Ranjitha Chandrashekar</p>
           </div>
         </div>
       </section>
