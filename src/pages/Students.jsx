@@ -15,7 +15,7 @@ const Students = () => {
       {/* <AnnouncementBar /> */}
       <ContactBar />
       <MainNavbar />
-      <CoursesOffered />
+      {/* <CoursesOffered /> */}
       <CourseCardsSection />
       <section className="py-5 bg-light">
         <div className="container">

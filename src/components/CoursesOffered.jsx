@@ -68,16 +68,6 @@ const CoursesOffered = () => {
             </Card>
           </Col>
         </Row>
-
-        {/* <div className="mt-4">
-          <Button
-            as={Link}
-            to="/"
-            className="btn btn-primary text-white text-decoration-none"
-          >
-            Enquire Now
-          </Button>
-        </div> */}
       </Container>
     </section>
   );

@@ -28,12 +28,12 @@ const CourseCard = ({ icon, title, features, eligibility, scholarship }) => {
         </div>
 
         {/* Details */}
-        <p className="mb-1">
+        {/* <p className="mb-1">
           <strong>Course Eligibility:</strong> {eligibility}
         </p>
         <p className="mb-0">
           <strong>Scholarship:</strong> {scholarship}
-        </p>
+        </p> */}
       </Card.Body>
     </Card>
   );

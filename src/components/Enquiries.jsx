@@ -100,23 +100,19 @@ const Enquiries = () => {
                 <thead>
                   <tr>
                     <th>#</th>
+                    <th>Date</th>
+
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Class & Board</th>
                     <th>Course Interested</th>
-                    <th>Date</th>
                   </tr>
                 </thead>
                 <tbody>
                   {data.map((entry, index) => (
                     <tr key={entry._id || index}>
                       <td>{index + 1}</td>
-                      <td>{entry.name}</td>
-                      <td>{entry.email}</td>
-                      <td>{entry.phone}</td>
-                      <td>{entry.classBoard}</td>
-                      <td>{entry.course}</td>
                       <td>
                         {entry.createdAt
                           ? new Date(entry.createdAt).toLocaleString("en-IN", {
@@ -125,6 +121,12 @@ const Enquiries = () => {
                             })
                           : "N/A"}
                       </td>
+
+                      <td>{entry.name}</td>
+                      <td>{entry.email}</td>
+                      <td>{entry.phone}</td>
+                      <td>{entry.classBoard}</td>
+                      <td>{entry.course}</td>
                     </tr>
                   ))}
                 </tbody>

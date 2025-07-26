@@ -7,44 +7,40 @@ import { FaFlask, FaUserMd, FaLaptopCode, FaAtom } from "react-icons/fa";
 const courses = [
   {
     icon: <FaLaptopCode size={24} />,
-    title: "2-year Board Synchronized PU + JEE Program",
+    title: "10th std(State/CBSE/ICSE)",
     features: [
-      "2-year classroom program",
-      "Integrated Board exam and JEE preparation",
-      "Option for State Board and CBSE Integrated Classroom Program",
+      "Offline - Individual Subjects (Maths & Science)",
+      "Online - Individual Subjects",
+      "Individual students mentorship (per hr basis)",
     ],
     eligibility: "10th Std students entering Class 11",
     scholarship: "On merit",
   },
   {
     icon: <FaUserMd size={24} />,
-    title: "2-year Board Synchronized PU + NEET Program",
+    title: "PUC(State/CBSE/ICSE )",
     features: [
-      "2-year classroom program",
-      "Integrated Board exam and NEET preparation",
-      "Option for State Board and CBSE Integrated Classroom Program",
+      "Offline - Individual Subjects (Maths & Science)",
+      "Online - Individual Subjects",
+      "Individual students mentorship (per hr basis)",
     ],
     eligibility: "10th Std students entering Class 11",
     scholarship: "On merit",
   },
   {
     icon: <FaAtom size={24} />,
-    title: "2-year Board Synchronized PU + KCET Program",
-    features: [
-      "2-year classroom program",
-      "Integrated Board exam and KCET preparation",
-      "Option for State Board and CBSE Integrated Classroom Program",
-    ],
+    title: "", //2-year Board Synchronized PU + KCET Program
+    features: ["Diploma Courses", "Engineering Courses", "Master's Courses"],
     eligibility: "10th Std students entering Class 11",
     scholarship: "On merit",
   },
   {
     icon: <FaFlask size={24} />,
-    title: "Foundation Program for Grades 8, 9, & 10",
+    title: "Tuitions",
     features: [
-      "Concept-building in Science and Mathematics",
-      "Foundation for JEE, NEET, and KCET with applied learning",
-      "Open for State, CBSE and ICSE Boards",
+      // "Concept-building in Science and Mathematics",
+      // "Foundation for JEE, NEET, and KCET with applied learning",
+      // "Open for State, CBSE and ICSE Boards",
     ],
     eligibility: "Students of Grades 8, 9, and 10",
     scholarship: "On merit",
@@ -105,8 +101,12 @@ const CourseCardsSection = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <Container className="py-5">
-      <Row className="g-4">
+    <Container className="py-5 text-center">
+      <h4 className="mb-4 border p-2 d-inline-block rounded-3 shadow-lg">
+        Courses Offered
+      </h4>
+
+      <Row className="g-4 mt-3">
         {courses.map((course, idx) => (
           <Col md={6} lg={3} key={idx}>
             <CourseCard {...course} />
