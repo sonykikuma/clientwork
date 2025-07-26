@@ -3,6 +3,9 @@ import AnnouncementBar from "../components/AnnouncementBar";
 import ContactBar from "../components/ContactBar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
+import Offerings from "../components/Offerings";
+import OurStrength from "../components/OurStrength";
+import StudyMaterials from "../components/StudyMaterials";
 
 const About = () => {
   return (
@@ -67,10 +70,18 @@ const About = () => {
         </div>
       </section>
 
-      {/* <section className="py-5 bg-light">
+      <section className="pb-5 bg-light">
         <div className="container">
-          <h1 className="mb-4">About SS-IIERC&TI</h1>
-          <p>
+          <div className="p-4 bg-white shadow-sm rounded-4">
+            <h3 className="mb-4 text-primary">Mission | Vision | Motto.</h3>
+            <strong>Mission:</strong> To empower learners with knowledge,
+            skills, and values that shape confident and responsible global
+            citizens. <br />
+            <strong>Vision:</strong> To be a center of academic excellence
+            recognized for innovative education, strong industry connects, and
+            holistic development. <br />
+            <strong> Motto:</strong> Learn, Grow, Succeed
+            {/* <p>
             SS-IIERC&TI is a premier institute offering comprehensive training,
             consultancy, and project support for students and professionals.
             With instructors from IITs, NITs, and reputed universities, we
@@ -81,10 +92,27 @@ const About = () => {
             We support students from 10th grade to Master’s level, and also help
             industry professionals with real-world project execution and
             upskilling.
-          </p>
+          </p> */}
+          </div>
         </div>
-      </section> */}
-
+      </section>
+      <section className="pb-5 bg-light">
+        <div className="container">
+          <div className="p-4 bg-white shadow-sm rounded-4">
+            <h3 className="mb-4 text-primary">Founder’s thoughts</h3>
+            <p>
+              “Education is the most powerful tool to ignite curiosity, build
+              character, and foster progress. At SS-IIERC&TI, we are committed
+              to creating an environment where learning thrives, aspirations
+              take shape, and every student discovers their unique potential.”
+            </p>
+            <p className="text-end">— Mrs. Ranjitha Chandrashekar</p>
+          </div>
+        </div>
+      </section>
+      <Offerings />
+      <OurStrength />
+      <StudyMaterials />
       <Footer />
     </>
   );
