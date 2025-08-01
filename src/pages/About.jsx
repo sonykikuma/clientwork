@@ -59,7 +59,8 @@ const About = () => {
             <div className="col-md-5">
               <div className="bg-white shadow-sm rounded-4 overflow-hidden">
                 <img
-                  src="/slide3.jpeg"
+                  // src="/slide3.jpeg"
+                  src="/client3.jpeg"
                   alt="About us"
                   className="img-fluid w-100"
                   style={{ height: "100%", objectFit: "cover" }}

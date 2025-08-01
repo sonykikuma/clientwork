@@ -11,7 +11,8 @@ const ImageCarousel = () => (
         <img
           className="d-block w-100 "
           style={{ height: "100vh", objectFit: "cover" }}
-          src={slide1}
+          src="/client5.jpeg"
+          //{slide1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,7 +24,7 @@ const ImageCarousel = () => (
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src={slide2}
+          src="/client7.jpeg" //{slide2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -35,7 +36,7 @@ const ImageCarousel = () => (
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src={slide4}
+          src="/client9.jpeg" //{slide4}
           alt="Third slide"
         />
         <Carousel.Caption>
