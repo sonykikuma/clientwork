@@ -8,6 +8,8 @@ import Academic from "./pages/Academic.jsx";
 import Industrial from "./pages/Industrial.jsx";
 import Students from "./pages/Students.jsx";
 import Enquiry from "./pages/Enquiry.jsx";
+import Menu from "./pages/Menu.jsx";
+import Legal from "./pages/Legal.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -16,6 +18,8 @@ const router = createBrowserRouter([
   { path: "/industrial", element: <Industrial /> },
   { path: "/students", element: <Students /> },
   { path: "/enquiry", element: <Enquiry /> },
+  { path: "/menu", element: <Menu /> },
+  { path: "/legal", element: <Legal /> },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
