@@ -27,7 +27,7 @@ const Academic = () => {
                   </li>
                   <li>CAD & CFD Software Training</li>
                 </ul>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   <strong>Dummy text filler:</strong>
                   <br />
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -36,7 +36,7 @@ const Academic = () => {
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur.
-                </p>
+                </p> */}
               </div>
             </div>
 
