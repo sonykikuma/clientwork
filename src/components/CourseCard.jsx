@@ -19,7 +19,7 @@ const CourseCard = ({ icon, title, features, eligibility, scholarship }) => {
         {/* Features */}
         <p className="fw-bold mt-3 mb-1 text-primary">Course Features</p>
         <div className="mb-3">
-          {features.map((item, idx) => (
+          {features?.map((item, idx) => (
             <div key={idx} className="d-flex align-items-start mb-2">
               <FaCheckCircle className="text-primary me-2 mt-1" />
               <span>{item}</span>

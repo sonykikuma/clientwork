@@ -8,9 +8,12 @@ import MainNavbar from "./components/MainNavbar";
 import HeroSection from "./components/HeroSection";
 import TrainingSection from "./components/TrainingSection";
 import ImageCarousel from "./components/ImageCarousel";
+import { Container, ListGroup } from "react-bootstrap";
 
 import "./App.css";
 import Footer from "./components/Footer";
+import CourseCardsSection from "./components/CourseCardsSection";
+import AcademicActivities from "./components/AcademicActivities";
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
       <ContactBar />
       <MainNavbar />
       {/* <HeroSection /> */}
-      <ImageCarousel />
+      {/* <ImageCarousel /> */}
+
+      <AcademicActivities />
+
       {/* <div className="">
         <BrochureLayout />
       </div> */}

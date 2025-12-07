@@ -18,8 +18,8 @@ const allCourses = [
   { label: "Industry Activities", url: "/industrial" },
   { label: "Student Activities", url: "/students" },
 
-  { label: "Menu", url: "/menu" },
-  { label: "Legal Activities", url: "/legal" },
+  // { label: "Menu", url: "/menu" },
+  // { label: "Legal Activities", url: "/legal" },
   // { label: "Data Analytics", url: "#" },
   // { label: "Programming", url: "#" },
   // { label: "Software Testing", url: "#" },

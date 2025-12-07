@@ -4,6 +4,8 @@ import ContactBar from "../components/ContactBar";
 import MainNavbar from "../components/MainNavbar";
 import Footer from "../components/Footer";
 import academic from "/academic.jpg"; // Replace with your actual image
+import TuitionsInfo from "../components/TuitionsInfo";
+import AcademicResources from "../components/AcademicResources";
 
 const Academic = () => {
   return (
@@ -54,7 +56,8 @@ const Academic = () => {
           </div>
         </div>
       </section>
-
+      <TuitionsInfo />
+      <AcademicResources />
       <Footer />
     </>
   );
